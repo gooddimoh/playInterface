@@ -5,7 +5,7 @@
     <meta name="viewport"
           ontent="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <style src="css/main.css"></style>
+    <link rel="stylesheet" href="css/main.scss">
     <script src="js/main.js"></script>
     <title>Document</title>
 </head>
@@ -19,5 +19,35 @@
         <input type="button" class="play-btn">
     </div>
 </div>
+
+<style>
+    html, body {
+        padding: 0;
+        margin: 0;
+    }
+
+    .bg {
+        position: absolute;
+        background: url("img/mainbackground.png") 100% 100%;
+        width: 100%;
+        height: 100%;
+    }
+
+    .scroll-btns {
+        position: absolute;
+        background: #000;
+        width: 22vw;
+        height: 100%;
+    }
+
+    .btn-btn {
+        position: absolute;
+        background: #000;
+        top: 10vh;
+        right: 13vw;
+        width: 1075px;
+        height: 80vh;
+    }
+</style>
 </body>
 </html>
