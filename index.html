@@ -19,6 +19,36 @@
         <input type="button" class="play-btn">
     </div>
 </div>
+
+<audio id="cassettetape">
+    <source src="resources/mp3/cassetteTape.mp3" type="audio/mp3">
+</audio>
+<audio id="eject">
+    <source src="resources/mp3/eject.mp3" type="audio/mp3">
+</audio>
+<audio id="pressbtn">
+    <source src="resources/mp3/pressBtn.mp3" type="audio/mp3">
+</audio>
+<button onclick="playAudio()" type="button">Play Audio</button>
+<script>
+    function playaudio(name) {
+        var counter = 0;
+        $(name).click(function () {
+            counter++;
+            if (counter == 1) {
+                this.play();
+            }
+            if (counter == 2) {
+                this.pause();
+                counter = 0;
+            }
+
+        });
+    }
+    playaudio("#playaudio");
+    playaudio("#eject");
+    playaudio("#pressbtn");
+</script>
 <style>
     html, body {
         padding: 0;
@@ -48,5 +78,6 @@
         height: 80vh;
     }
 </style>
+
 </body>
 </html>
